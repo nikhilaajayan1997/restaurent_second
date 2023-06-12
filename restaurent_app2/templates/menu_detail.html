@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+
+    #div2 {
+      
+      position: relative;
+      animation-name: example1;
+      animation-duration: 2s;  
+      animation-fill-mode: forwards;
+    }
+    @keyframes example1 {
+      from {top:100px;}
+      to {top: 30px; color: rgb(199, 197, 197);}
+      
+    }
+    
+    
+    </style>
+
+<div style="background-image: url(https://c4.wallpaperflare.com/wallpaper/238/791/784/burgers-wallpaper-preview.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;height: 400px;background-size:100% 100%;">
+    <div style="background-color: rgba(58, 58, 57, 0.37);height: 400px;">
+        <div class="row ">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+        
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="div2">
+                    <h1 style="font-family: cursive;color: rgb(247, 244, 244);text-align: center;margin-top: 30%;font-size: 500%;">Menu Detail</h1>
+                    <h5 style="color: white;text-align: center;">Home > Menu Detail ></h5>
+
+                </div>
+      
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+          </div>
+        
+    </div>
+
+</div>
+
+<div style="background-image: url(https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_1280.jpg);background-repeat: no-repeat;background-size: cover;padding-bottom: 15%;">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 ps-4 pe-4 mt-3">
+            <div  style="width: 100%;" >
+                <img src="https://media.istockphoto.com/id/533442914/photo/cheeseburger-and-french-fries-on-red-spotlight-on-wooden-table.jpg?s=612x612&w=0&k=20&c=bGadI4bq2rfV0rOzKBY6ZQNnlWooyWlWoC3MqyGIm3c=" alt="" style="width: 100%; height: 400px;">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 ps-4 pe-4 mt-3 pb-4" >
+            <div  style="background-color: rgba(54, 54, 54, 0.575);">
+                <center>
+                    <h1 class="pt-4" style="font-family: cursive; color: white;">Burger with Chips</h1>
+                    <h3 style="font-family: cursive;color: rgb(238, 157, 5);">$50</h3>
+                    <h5  style="color: rgb(243, 242, 239);"><b>Qty:1</b></h5>
+
+
+                </center>
+                <p class="p-3" style="color: rgb(253, 253, 252);text-align: justify;">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                         On her way she met a copy. The copy warned the Little Blind Text, that where it came from 
+                       it would have been rewritten a thousand times and everything that was left from its origin 
+                       would be the word "and" and the Little Blind Text should turn around and return to its own, 
+                       
+                </p>
+                <center>
+                    <a href="" class="btn btn-warning mb-5"><b>add to Cart</b></a>
+
+                </center>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock%}

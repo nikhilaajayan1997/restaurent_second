@@ -1,0 +1,546 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+
+    #div2 {
+      
+      position: relative;
+      animation-name: example1;
+      animation-duration: 2s;  
+      animation-fill-mode: forwards;
+    }
+    @keyframes example1 {
+      from {top:100px;}
+      to {top: 30px; color: rgb(199, 197, 197);}
+      
+    }
+    
+    
+    </style>
+    
+    <div style="background-image: url(https://c4.wallpaperflare.com/wallpaper/238/791/784/burgers-wallpaper-preview.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;height: 400px;background-size:100% 100%;">
+        <div style="background-color: rgba(58, 58, 57, 0.37);height: 400px;">
+            <div class="row ">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+            
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div id="div2">
+                        <h1 style="font-family: cursive;color: rgb(247, 244, 244);text-align: center;margin-top: 30%;font-size: 500%;">Menu</h1>
+                        <h5 style="color: white;text-align: center;">Home > Menu ></h5>
+    
+                    </div>
+          
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4"></div>
+              </div>
+            
+        </div>
+    
+    </div>
+
+    <div style="background-image: url(https://cdn.pixabay.com/photo/2020/03/21/02/50/pizza-4952534_1280.jpg);background-repeat: no-repeat;background-size:100% 100%;padding-bottom: 15%;padding-top: 2%;">
+        <div class="row pt-3 mb-5">
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <center>
+                        <button  class="btn btn-outline-light " onclick="fieldset1_function()"><b>Breakfast</b></button>
+                        <button class="btn btn-outline-light " onclick="fieldset2_function()"><b>Lunch</b></button>
+    
+                        <a href="" class="btn btn-outline-light"><b>Dinner</b></a>
+    
+                        <a href="" class="btn btn-outline-light"><b>Deserts</b></a>
+    
+                </center>
+    
+    
+    
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+        </div>
+        <fieldset1 id="field1">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="{% url 'menu_detail' %}" class="btn btn-dark">VIEW</a>
+    
+                            </center>
+                         </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                       
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/912629972/photo/chicken-kebab-with-bell-pepper.jpg?s=170667a&w=0&k=20&c=P1EDrROfJO9xZbI9_LSnkc1c7WvSBKm62saQ4uYPVYU=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Malayi Koffta</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                 
+                       </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </fieldset1>
+
+        <fieldset2 style="display: none;" id="field2">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1311405017/photo/moroccan-fish-with-chermoula-red-peppers-and-preserved-lemon.webp?b=1&s=170667a&w=0&k=20&c=FR6G4MVUE7p46fugy33tM0IasLLLzxC9n0FBYHuZkPk=" class="img-fluid rounded-start w-100" alt="..." style="height: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <center>
+                                    <h5 class="card-title" style="font-family: cursive;">Tortilla</h5>
+    
+                                </center>         
+                              <center>                  
+                                        <h5 style="color: rgb(221, 189, 5);">$50</h5>
+                              </center>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                            <center>
+                                <a href="" class="btn btn-dark">VIEW</a>
+    
+                            </center>                        
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </fieldset2>
+        
+    </div>
+    
+
+
+    <script>
+        
+         function fieldset1_function(){
+            document.getElementById('field2').style.display="none";
+            document.getElementById('field1').style.display="block";
+
+         }
+         function fieldset2_function(){
+            document.getElementById('field1').style.display="none";
+            document.getElementById('field2').style.display="block";
+
+         }
+   
+     </script> 
+
+
+{% endblock %}
