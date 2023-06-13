@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+
+
+#div2 {
+      
+      position: relative;
+      animation-name: example1;
+      animation-duration: 2s;  
+      animation-fill-mode: forwards;
+    }
+    @keyframes example1 {
+      from {top:100px;}
+      to {top: 30px; color: rgb(199, 197, 197);}
+      
+    }
+  
+</style>
+
+<div style="background-image: url(https://c4.wallpaperflare.com/wallpaper/238/791/784/burgers-wallpaper-preview.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;height: 400px;background-size:100% 100%;">
+    <div style="background-color: rgba(88, 88, 88, 0.37);height: 400px;">
+        <div class="row ">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+        
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="div2">
+                    <h1 style="font-family: cursive;color: rgb(247, 244, 244);text-align: center;margin-top: 30%;font-size: 500%;">Cart</h1>
+                    <h5 style="color: white;text-align: center;">Home > Cart ></h5>
+
+                </div>
+      
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+          </div>
+        
+    </div>
+
+</div>
+
+<div style="background-image: url(https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_1280.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="row pt-5" style="padding-bottom: 20%;">
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+        <div class="col-sm-12 col-md-8 col-lg-8 ps-4 pe-4">
+            <div class="card mt-3">
+                
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div>
+                            <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="height: 150px;width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <center><h5 class="mt-2">Malayi Koffta</h5></center>
+                        <p style="text-align: justify;">
+                            In publishing and graphic design, Lorem ipsum is 
+                            a placeholder text
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <center>
+                            <label for="" class="mt-5" style="font-family: cursive;">Qty</label>
+                            <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </center>
+                    </div>                   
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <center>
+                            <h5 class="mt-4" style="color: rgb(238, 203, 6);">$50</h5>
+                            <a href="" class="btn btn-dark">Order</a>
+                        </center>
+                    </div>
+                        
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+    </div>
+</div>
+
+
+
+{% endblock %}
