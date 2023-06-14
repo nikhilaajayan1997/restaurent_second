@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base1.html' %}
 {% block content %}
 
 <style>
@@ -73,7 +73,7 @@
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <center>
                             <h5 class="mt-4" style="color: rgb(238, 203, 6);">$50</h5>
-                            <a href="" class="btn btn-dark">Order</a>
+                            <a href="{% url 'checkout' %}" class="btn btn-dark">Order</a>
                         </center>
                     </div>
                         

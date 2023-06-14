@@ -1,0 +1,110 @@
+{% extends 'base1.html' %}
+{% block content %}
+
+
+<style>
+
+    #div2 {
+      
+      position: relative;
+      animation-name: example1;
+      animation-duration: 2s;  
+      animation-fill-mode: forwards;
+    }
+    @keyframes example1 {
+      from {top:100px;}
+      to {top: 30px; color: rgb(199, 197, 197);}
+      
+    }
+    
+    
+    </style>
+    
+    <div style="background-image: url(https://c4.wallpaperflare.com/wallpaper/238/791/784/burgers-wallpaper-preview.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;height: 400px;background-size:100% 100%;">
+        <div style="background-color: rgba(58, 58, 57, 0.37);height: 400px;">
+            <div class="row ">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+            
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div id="div2">
+                        <h1 style="font-family: cursive;color: rgb(247, 244, 244);text-align: center;margin-top: 30%;font-size: 500%;">Checkout</h1>
+                        <h5 style="color: white;text-align: center;">Home > Checkout ></h5>
+    
+                    </div>
+          
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4"></div>
+              </div>
+            
+        </div>
+    
+    </div>
+
+    <div style="background-image: url(https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_1280.jpg);background-repeat: no-repeat;background-size: cover;padding-bottom: 15%;">
+        <div >
+          <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6 pe-4 ps-4">
+              <div class="mt-5 mb-5" style="background-color: rgba(94, 93, 93, 0.589);">
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <center>
+                      <h1 class="pt-5" style="font-family: cursive;color: white;">BILLING DETAILS</h1>
+
+                    </center>
+                  </div>
+                </div>
+                <div class="row ">
+      
+                  <div class="col-sm-12 col-md-12 col-lg-12 ps-4 pe-4 mt-3">
+                    <h5 style="font-family: cursive;color: white;">Card Type </h5>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/mastercard.png" alt="mastercard"/>
+                    <img width="48" height="48" src="https://img.icons8.com/color-glass/48/visa.png" alt="visa"/>
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/paypal.png" alt="paypal"/>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/amex.png" alt="amex"/>
+      
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-sm-12 col-md-12 col-lg-12 ps-4 pe-4 mt-3">
+                    <input type="text" class="form-control" placeholder="Cardholder's Name">                    
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-sm-12 col-md-12 col-lg-12 ps-4 pe-4 mt-3">
+                    <input type="number" class="form-control" placeholder="Card Number">                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 ps-4 pe-4 mt-3">
+                    <input type="date" class="form-control" placeholder="date of expiry">                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 ps-4 pe-4 mt-3">
+                    <input type="number" class="form-control" placeholder="Cvv Number">                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 ps-4 pe-4 mt-3">
+                    <center>
+                      <a href="{% url 'home_page1' %}" class="btn btn-dark mb-5" style="width: 35%;">Pay </a>
+
+                    </center>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+          </div>
+        </div>
+
+      </div>
+
+      
+
+
+
+{% endblock %}

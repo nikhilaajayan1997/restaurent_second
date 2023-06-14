@@ -44,6 +44,17 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js">
 
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/3b9793c077.js" crossorigin="anonymous"></script>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+
+
 
 
 
@@ -110,6 +121,39 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js">
       pointer-events: none;
       color: #b4b4b4;
   }
+
+
+  .animate-charcter
+{
+   text-transform: uppercase;
+   /* margin-top: 20%; */
+  background-image: linear-gradient(
+    -225deg,
+    #574b15 0%,
+    #aeb107 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+
   
   
   
@@ -122,7 +166,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js">
 <body>
     <nav class="navbar navbar-expand-lg sticky-top " data-bs-theme="dark" style="background-color: rgb(41, 40, 41);">
         <div class="container-fluid">
-          <a class="navbar-brand waviy" href="#" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: white;"><span style="--i:1">F</span><span style="--i:2">L</span><span style="--i:3">O</span><span style="--i:4">W</span><span style="--i:5">E</span><span style="--i:6">R</span><span style="--i:6">Y</span></a>
+          <a class="navbar-brand animate-charcter" href="#" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: white;">Cabsberry</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -133,20 +177,20 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js">
                 <a class="nav-link " aria-current="page" href="">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'aboutus' %}">ABOUT</a>
+                <a class="nav-link" href="{% url 'aboutus1' %}">ABOUT</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'contactus' %}">CONTACT</a>
+                <a class="nav-link" href="{% url 'contactus1' %}">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'menu' %}">MENU</a>
+                <a class="nav-link" href="{% url 'menu1' %}">MENU</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'blog' %}">BLOG</a>
+                <a class="nav-link" href="{% url 'blog1' %}">BLOG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'login' %}">SIGNIN/SIGNUP</a>
+                <a class="nav-link" href="{% url 'home_page' %}">LOGOUT</a>
               </li>
               
               
@@ -178,11 +222,11 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js">
     
       {% endblock %}
     
-      <div class="w-100 mt-5" style="background-color: rgb(250, 95, 121);">
+      <div class="w-100 mt-5" style="background-color: rgb(43, 42, 42);">
         <div class="container pb-5">
           <div class="row pt-5">
             <div class="col-sm-12 col-md-4 col-lg-4">
-              <h3 style="color: rgb(248, 247, 246);font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">FLOWERY</h3>
+              <h3 class="animate-charcter" style="color: rgb(248, 247, 246);font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">CABSBERRY</h3>
               <p style="font-size: large;color: rgb(223, 223, 220);">
                 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est 
                 notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum 

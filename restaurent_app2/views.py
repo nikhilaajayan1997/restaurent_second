@@ -44,5 +44,11 @@ def menu_detail1(request):
 def login(request):
     return render(request,'login.html')
 
+def checkout(request):
+    return render(request,'checkout.html')
+
 def cart(request):
     return render(request,'cart.html')
+
+def sign_up(request):
+    return render(request,'sign_up.html')

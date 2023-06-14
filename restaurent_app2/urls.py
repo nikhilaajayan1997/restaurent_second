@@ -9,12 +9,18 @@ urlpatterns=[
     path('menu',views.menu,name='menu'),    
     path('menu1',views.menu1,name='menu1'),
     path('blog',views.blog,name='blog'),
+    path('blog1',views.blog1,name='blog1'),
     path('blog_detail',views.blog_detail,name='blog_detail'),
     path('menu_detail',views.menu_detail,name='menu_detail'),
+    path('menu_detail1',views.menu_detail1,name='menu_detail1'),
     path('login',views.login,name='login'),
     path('cart',views.cart,name='cart'),
     path('home_page1',views.home_page1,name='home_page1'),    
     path('aboutus1',views.aboutus1,name='aboutus1'),
+    path('sign_up',views.sign_up,name='sign_up'),
+    path('checkout',views.checkout,name='checkout'),
+
+
 
 
 
