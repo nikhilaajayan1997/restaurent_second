@@ -63,7 +63,7 @@
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <center>
                             <label for="" class="mt-5" style="font-family: cursive;">Qty</label>
-                            <select name="" id="">
+                            <select name="" id="select" onclick="price()">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -72,7 +72,7 @@
                     </div>                   
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <center>
-                            <h5 class="mt-4" style="color: rgb(238, 203, 6);">$50</h5>
+                            <label for="" class="mt-4"><b>Price :</b></label><label for="" class="mt-4" style="color: rgb(192, 126, 4);"><b>$</b></label><label for="" class="mt-4" id="price" style="color: rgb(192, 126, 4);"><b>50</b></label><br>
                             <a href="{% url 'checkout' %}" class="btn btn-dark">Order</a>
                         </center>
                     </div>
@@ -87,5 +87,14 @@
 </div>
 
 
+
+<script>
+    function price(){
+      var x=document.getElementById("select").value;
+      var y=50;
+      var z=y*x;
+      document.getElementById("price").innerHTML=z;
+    }
+</script>
 
 {% endblock %}

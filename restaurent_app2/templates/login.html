@@ -14,43 +14,171 @@
      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </head>
+
+
+<style>
+    .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  /* font-size: 30px; */
+  }
+  .waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #0a0a0a;
+  /* text-transform: uppercase; */
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+  }
+  @keyframes waviy {
+  0%,40%,100% {
+  transform: translateY(0)
+  }
+  20% {
+  transform: translateY(-20px)
+  }
+  }
+
+
+
+  /* ....................    sign in button ............ */
+
+  .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 40%;
+  min-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #1c1c1d;
+  background: #141414;
+background: linear-gradient(90deg, rgb(173, 175, 25) 0%, rgb(189, 115, 6) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(214, 211, 18, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(60% + 40%);
+  min-height: calc(40px + 12px);
+  border: 6px solid #3a3a39;
+  box-shadow: 0 0 60px rgba(255, 166, 0, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #fafafc;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, .button:focus::before {
+  opacity: 1;
+}
+
+.button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #4c4d4d;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 2.0s infinite;
+}
+
+.button:hover::after, .button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+  
+  
+  
+</style>
 <body>
     <div style="background-image: url(https://wallpaperset.com/w/full/d/e/a/296343.jpg);background-repeat: no-repeat;background-size: cover;height: 600px;background-size:100% 100%;">
             <div class="row">
                 <div class="col-sm-12 col-md-2 col-lg-2"></div>
 
                 <div class="col-sm-12 col-md-4 col-lg-4 ps-4 pe-4 pt-5">
-                    <div class="p-4 " style="background-color: rgba(145, 142, 2, 0.541);margin-top: 20%;">
+                    <!-- <div class="p-4 " style="background-color: rgba(145, 142, 2, 0.541);margin-top: 20%;"> -->
+                        <div class="mt-4" style="background-image: url(https://us.123rf.com/450wm/bbtreesubmission/bbtreesubmission2206/bbtreesubmission220606996/187729046-cherry-tomatoes-against-white-background.jpg?ver=6);height: 400px;background-repeat: no-repeat;background-size: cover;border-radius: 10px;">
+
                         <div class="row">
-                            <div class="col-sm-12 col-md-3 col-lg-3"></div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                            <div class="col-sm-12 col-md-8 col-lg-8">
                                 <i></i><br>
                                 <center>
-                                    <h3 style="color: rgb(253, 251, 251);">LOG IN</h3>
+                                    <h2 class="pt-3 waviy" style="color: rgb(22, 22, 22); font-family: cursive;"><b>
+                                        <!-- Book 
+                                    your 
+                                food!!! -->
+                                <span style="--i:1">Book</span>&nbsp;<span style="--i:2"> your</span>&nbsp;<span style="--i:3"> food</span><span style="--i:4">!!!</span>
+                                    </b></h2>
 
                                 </center>
                             </div>
-                            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+                            <div class="col-sm-12 col-md-2 col-lg-2"></div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-md-1 col-lg-1"></div>
-                            <div class="col-sm-12 col-md-10 col-lg-10">
+                            <div class="col-sm-12 col-md-10 col-lg-10 ps-4 pe-4">
                                 <form action="" method="post">
-                                    <div class="form-group">
-                                        <label for="uname" style="color: white;">Username:</label>
+                                    <div class="form-group mt-3">
+                                        <label for="uname" style="color: rgb(31, 30, 30);">Username:</label>
                                         <input type="text" class="form-control" id="uname" placeholder="Enter username" name="username" required>
                                         <!-- <div class="valid-feedback">Valid.</div> -->
                                         <div class="invalid-feedback">Please fill out this field.</div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="pwd" style="color: white;">Password:</label>
+                                    <div class="form-group mt-2">
+                                        <label for="pwd" style="color: rgb(29, 29, 29);">Password:</label>
                                         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
                                         <!-- <div class="valid-feedback">Valid.</div> -->
                                         <div class="invalid-feedback">Please fill out this field.</div>
                                     </div>
                                     
-                                    <center>                       
-                                         <a href="{% url 'home_page1' %}" class="btn mt-3 btn-dark" style="width: 60%;">LOGIN</a><br><br>
+                                    <center> 
+                                        <div class="wrap">
+                                            <a href="{% url 'home_page1' %}" class="btn mt-5 btn-dark button" style="width: 60%;">SIGN IN</a><br><br>
+
+                                        </div>                      
                                          <a href="{% url 'sign_up' %}" style="text-decoration: none;color: rgb(5, 5, 163);">you don't have an account? signup </a>
             
                                     </center>
