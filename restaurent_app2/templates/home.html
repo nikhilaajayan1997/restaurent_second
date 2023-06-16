@@ -55,8 +55,55 @@
   align-items: center;
 }
 
+
+
+/* ....................       services   .........................*/
+
+.cont {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #60616163;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.cont:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: rgb(250, 213, 5);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
     
 
+
+/* ..................  star rating    ................*/
+.checked {
+  color: orange;
+}
 
 </style>
 
@@ -74,14 +121,14 @@
         <h1 style="color: white;font-family: cursive;font-size: 400%;">Cabsberry Restaurant</h1>
         <p ><h5 class="mb-5 pb-5" style="color: rgb(252, 252, 251);font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 200%;">Feels Like Home Tastes Like Paradise.</h5></p>
       </div>
-  <img src="https://c4.wallpaperflare.com/wallpaper/238/791/784/burgers-wallpaper-preview.jpg" style="height: 450px;" class="d-block w-100" alt="...">
+  <img src="https://c4.wallpaperflare.com/wallpaper/238/791/784/burgers-wallpaper-preview.jpg" style="height: 450px;object-fit: cover;" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <div class="carousel-caption d-none d-md-block mb-5 pb-5">
         <h1 style="color: white;font-family: cursive;font-size: 400%;">Cabsberry Restaurant</h1>
         <p ><h5 class="mb-5 pb-5" style="color: rgb(252, 252, 251);font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 200%;">Feels Like Home Tastes Like Paradise.</h5></p>
       </div>
-  <img src="https://c4.wallpaperflare.com/wallpaper/1019/417/97/mcdonalds-burger-and-fries-hd-wallpaper-wallpaper-preview.jpg" style="height: 450px;" class="d-block w-100" alt="...">
+  <img src="https://c4.wallpaperflare.com/wallpaper/1019/417/97/mcdonalds-burger-and-fries-hd-wallpaper-wallpaper-preview.jpg" style="height: 450px;object-fit: cover;" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -107,9 +154,15 @@
             <div class="col-sm-12 col-md-3 col-lg-3 pt-3 ps-4 pe-4 pb-5" >
                 <div class="mt-5" style="height: 200px;">
                     
-                    <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" class="w-100" style="height: 200px;">
-                    <center>             
+                    <center>                     
+                      <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt=""  style="max-width:100%;height: 200px;">
+            
                       <h6 class="pt-2" style="color: white;font-family: cursive;color: black;">demo text</h6>
+                      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
                       <h5 style="color: gold;">$50</h5>
                       <a href="{% url 'menu_detail' %}" class="btn btn-dark">Order</a>                  
                     </center>
@@ -117,9 +170,15 @@
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3 pt-3 ps-4 pe-4 pb-5">
               <div class="mt-5" style="height: 200px;">
-                  <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" class="w-100" style="height: 200px;">
-                  <center>             
+                  <center>  
+                     <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-3.png" alt=""  style="max-width:100%;height: 200px;">
+           
                     <h6 class="pt-2" style="color: white;font-family: cursive;color: black;">demo text</h6>
+                    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
                     <h5 style="color: gold;">$50</h5>
                     <a href="{% url 'menu_detail' %}" class="btn btn-dark">Order</a>                  
                   </center>
@@ -127,9 +186,15 @@
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3 pt-3 ps-4 pe-4 pb-5">
               <div class="mt-5" style="height: 200px;">
-                  <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" class="w-100" style="height: 200px;">
-                  <center>             
+                  <center>                  
+                    <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-2.png" alt=""  style="max-width:100%;height: 200px;">
+             
                     <h6 class="pt-2" style="color: white;font-family: cursive;color: black;">demo text</h6>
+                    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
                     <h5 style="color: gold;">$50</h5>
                     <a href="{% url 'menu_detail' %}" class="btn btn-dark">Order</a>                  
                   </center>
@@ -137,9 +202,15 @@
             </div>           
             <div class="col-sm-12 col-md-3 col-lg-3 pt-3 ps-4 pe-4 pb-5" >
               <div class="mt-5 " style="height: 200px;">
-                  <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" class="w-100" style="height: 200px;">
-                  <center>             
+                  <center>   
+                    <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt=""  style="max-width:100%;height: 180px;">
+          
                     <h6 class="pt-2" style="color: white;font-family: cursive;color: black;">demo text</h6>
+                    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
                     <h5 style="color: gold;">$50</h5>
                     <a href="{% url 'menu_detail' %}" class="btn btn-dark">Order</a>                  
                    </center>
@@ -155,7 +226,10 @@
     <div class="row">
       <div class="col-sm-12 col-lg-6 col-md-6 ps-4 pe-4">
           <div style="width: 100%;height: 350px;">
-              <img src="https://media.istockphoto.com/id/1369920192/photo/chef-presenting-a-plate-of-food.jpg?s=170667a&w=0&k=20&c=AXt4R73gmTH0rcyuA_cPbSxCMX6K2yMYEfzCGHcVe4I=" alt="" style="width: 100%;height: 100%;">
+            <center>
+                            <img src="https://media.istockphoto.com/id/1369920192/photo/chef-presenting-a-plate-of-food.jpg?s=170667a&w=0&k=20&c=AXt4R73gmTH0rcyuA_cPbSxCMX6K2yMYEfzCGHcVe4I=" alt="" style="max-width: 100%;height: 100%;object-fit: cover;">
+
+            </center>
           </div>
       </div>
       <div class="col-sm-12 col-lg-6 col-md-6 ps-4 pe-4">
@@ -196,7 +270,7 @@
       </div>
       <div class="col-sm-12 col-lg-4 col-md-4 pe-4 ps-4 mt-2">
         <div style="background-color: rgb(236, 202, 4);width: 100%;height: 400px;border-radius: 20px;">
-          <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-2.png" alt="" style="width: 100%;height: 400px;">
+          <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-2.png" alt="" style="max-width: 100%;height: 400px;object-fit: cover;">
         </div>
       </div>
       <div class="col-sm-12 col-lg-2 col-md-2 pe-4 ps-4"></div>
@@ -211,7 +285,7 @@
        <div style="background-color: black;">
         <div class="row">
           <div style="width: 100%;height: 270px;">
-            <img src="https://cdn.pixabay.com/photo/2016/06/06/18/29/meat-skewer-1440105_640.jpg" alt="" style="width: 100%;height: 100%;">
+            <img src="https://cdn.pixabay.com/photo/2016/06/06/18/29/meat-skewer-1440105_640.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
           </div>
         </div>
         <div class="row">
@@ -240,7 +314,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 ">
             <div style="width: 100%;height: 450px;background-color: black;">
-              <img src="https://e0.pxfuel.com/wallpapers/374/723/desktop-wallpaper-thanksgiving-10-best-apps-for-android-minimal-thanksgiving.jpg" alt="" style="height: 100%;width: 100%;">
+              <img src="https://e0.pxfuel.com/wallpapers/374/723/desktop-wallpaper-thanksgiving-10-best-apps-for-android-minimal-thanksgiving.jpg" alt="" style="height: 100%;width: 100%;object-fit: cover;">
 
             </div>
             
@@ -276,7 +350,7 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 ">
               <div style="width: 100%;height: 450px;background-color: black;">
-                <img src="https://e0.pxfuel.com/wallpapers/374/723/desktop-wallpaper-thanksgiving-10-best-apps-for-android-minimal-thanksgiving.jpg" alt="" style="height: 100%;width: 100%;">
+                <img src="https://e0.pxfuel.com/wallpapers/374/723/desktop-wallpaper-thanksgiving-10-best-apps-for-android-minimal-thanksgiving.jpg" alt="" style="height: 100%;width: 100%;object-fit: cover;">
   
               </div>
               
@@ -284,7 +358,7 @@
           </div>
           <div class="row">
             <div style="width: 100%;height: 270px;">
-              <img src="https://media.istockphoto.com/id/1146261080/photo/chef-finishing-healthy-salad-on-a-black-plate-with-tweezers-almost-ready-to-serve-it-on-a.jpg?s=170667a&w=0&k=20&c=sYoRHS-kGtqYBZSULocUcLBbxhglS-OWugHwIzJUmi4=" alt="" style="width: 100%;height: 100%;">
+              <img src="https://media.istockphoto.com/id/1146261080/photo/chef-finishing-healthy-salad-on-a-black-plate-with-tweezers-almost-ready-to-serve-it-on-a.jpg?s=170667a&w=0&k=20&c=sYoRHS-kGtqYBZSULocUcLBbxhglS-OWugHwIzJUmi4=" alt="" style="width: 100%;height: 100%;object-fit: cover;">
             </div>
           </div>
          
@@ -356,7 +430,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://freepngimg.com/thumb/food/139065-food-plate-fish-free-download-png-hq-thumb.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -372,7 +446,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/011/016/487/small/potato-pancakes-with-bacon-free-png.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -388,7 +462,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -404,7 +478,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-3.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -425,7 +499,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-2.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -441,7 +515,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-3.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -457,7 +531,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://freepngimg.com/thumb/food/139065-food-plate-fish-free-download-png-hq-thumb.png" alt="" style="max-width: 100%;height: 200px;object-fit: cover;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -473,7 +547,7 @@
         <div class="wrapper mt-5">
           <div class="bubble" tabindex="0">
             <div>
-              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="width: 100%;height: 200px;">
+              <img src="https://preview.colorlib.com/theme/caviar/img/menu-img/dish-1.png" alt="" style="max-width: 100%;height: 200px;">
               <h5 style="color: white;">quality cuisine</h5>
               <a href="{% url 'menu_detail' %}" class="btn btn-warning">View</a>
 
@@ -494,7 +568,7 @@
 
   <!-- .......................................accordian.............................. -->
       
-  <div>
+  <div class="pb-5">
     <div class="row mt-5">
       <div class="col-sm-12 col-md-3 col-lg-3"></div>
       <div class="col-sm-12 col-md-6 col-lg-6">
@@ -558,6 +632,75 @@
         </div>
       </div>
     </div>
+  </div>
+
+
+
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_1280.jpg);background-repeat: no-repeat;background-size: cover;object-fit: cover;padding-bottom: 15%;">
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-3 col-lg-3"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <center>
+          <h1 style="font-family: cursive;color: white;">Our Services</h1>
+          <p style="color: rgb(207, 177, 3);font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            A small river named Duden flows by their place 
+            and supplies it with the necessary regelialia
+            A small river named Duden flows by their place 
+            and supplies it with the necessary regelialia
+          </p>
+        </center>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3"></div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+        <!-- <div style="width: 100%; height: 200px;background-color: rgba(143, 122, 3, 0.404);"> -->
+          <center>
+            <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+              <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/birthday--v2.png" class="image" alt="birthday--v2"/>             
+               <div class="overlay">
+                <div ><a href="{% url 'service_detail' %}"  class="text" style="text-decoration: none;"><b>Birthday Party</b></a></div>
+              </div>
+            </div>
+          </center>
+        <!-- </div> -->
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <center>
+          <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+            <img width="94" height="94" src="https://img.icons8.com/plasticine/100/meeting-room.png" class="image" alt="meeting-room"/>
+            <div class="overlay">
+
+            <div ><a href=""  class="text" style="text-decoration: none;"><b>Business Meeting</b></a></div>
+            </div>
+          </div>
+        </center>
+
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <center>
+          <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+            <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/wedding-day.png" class="image" alt="wedding-day"/>        
+                <div class="overlay">
+
+            <div ><a href=""  class="text" style="text-decoration: none;"><b>Wedding Party</b></a></div>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <center>
+          <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+            <img width="94" height="94" src="https://img.icons8.com/avantgarde/100/delivery.png" class="image" alt="delivery"/>
+            <div class="overlay">
+            <div ><a href=""  class="text" style="text-decoration: none;"><b>Online Delivery</b></a></div>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+    
   </div>
 
   

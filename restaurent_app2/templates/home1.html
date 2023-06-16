@@ -55,7 +55,51 @@
   align-items: center;
 }
 
+
+
+/* ....................       services   .........................*/
+
+.cont {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #60616163;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.cont:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: rgb(250, 213, 5);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
     
+
+
 
 
 </style>
@@ -561,6 +605,73 @@
   </div>
 
   
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_1280.jpg);background-repeat: no-repeat;background-size: cover;object-fit: cover;padding-bottom: 15%;">
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-3 col-lg-3"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <center>
+          <h1 style="font-family: cursive;color: white;">Our Services</h1>
+          <p style="color: rgb(207, 177, 3);font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            A small river named Duden flows by their place 
+            and supplies it with the necessary regelialia
+            A small river named Duden flows by their place 
+            and supplies it with the necessary regelialia
+          </p>
+        </center>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3"></div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+        <!-- <div style="width: 100%; height: 200px;background-color: rgba(143, 122, 3, 0.404);"> -->
+          <center>
+            <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+              <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/birthday--v2.png" class="image" alt="birthday--v2"/>             
+               <div class="overlay">
+                <div ><a href="{% url 'service_detail1' %}"  class="text" style="text-decoration: none;"><b>Birthday Party</b></a></div>
+              </div>
+            </div>
+          </center>
+        <!-- </div> -->
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <center>
+          <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+            <img width="94" height="94" src="https://img.icons8.com/plasticine/100/meeting-room.png" class="image" alt="meeting-room"/>
+            <div class="overlay">
+
+            <div ><a href=""  class="text" style="text-decoration: none;"><b>Business Meeting</b></a></div>
+            </div>
+          </div>
+        </center>
+
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <center>
+          <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+            <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/wedding-day.png" class="image" alt="wedding-day"/>        
+                <div class="overlay">
+
+            <div ><a href=""  class="text" style="text-decoration: none;"><b>Wedding Party</b></a></div>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <center>
+          <div class="cont p-2 mt-3" style="background-color: rgba(54, 54, 54, 0.438);">
+            <img width="94" height="94" src="https://img.icons8.com/avantgarde/100/delivery.png" class="image" alt="delivery"/>
+            <div class="overlay">
+            <div ><a href=""  class="text" style="text-decoration: none;"><b>Online Delivery</b></a></div>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+    
+  </div>
+
   
 
 

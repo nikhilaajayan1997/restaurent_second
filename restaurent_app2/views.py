@@ -38,6 +38,13 @@ def blog_detail(request):
 def menu_detail(request):
     return render(request,'menu_detail.html')
 
+def service_detail(request):
+    return render(request,'service_detail.html')
+
+def service_detail1(request):
+    return render(request,'service_detail1.html')
+
+
 def menu_detail1(request):
     return render(request,'menu_detail1.html')
 
